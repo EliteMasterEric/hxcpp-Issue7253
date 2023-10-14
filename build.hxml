@@ -1,5 +1,5 @@
 --class-path src
---main Main
 --cpp bin/
---library hxcpp-debug-server
 --debug
+--library hxcpp-debug-server
+--main Main

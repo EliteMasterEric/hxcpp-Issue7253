@@ -1,12 +1,12 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "hxml",
-			"file": "build.hxml",
-			"group": "build",
-			"problemMatcher": [],
-			"label": "hxml: build.hxml"
-		}
-	]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "hxml",
+      "file": "build.hxml",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "hxml: build.hxml"
+    }
+  ]
 }
