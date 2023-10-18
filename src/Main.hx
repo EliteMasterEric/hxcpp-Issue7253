@@ -22,6 +22,8 @@ class Main {
 
 		trace("Begin");
 
+		case1();
+
 		case2();
 
 		trace("Finish");
@@ -40,10 +42,10 @@ class Main {
 		trace("Begin case 1");
 		var inst = new SomeClass();
 		try {
-			var unexistProperty = Reflect.getProperty(inst, "unexistProperty");
-			trace(unexistProperty.some);
+			var val = null;
+			trace(val.unexistProperty);
 		} catch (e:Dynamic) {
-			trace(e); // Null Object Reference - works as expected
+			trace(e);
 		}
 		trace("End case 1");
 	}
@@ -52,7 +54,7 @@ class Main {
 		trace("Begin case 2");
 		var inst = new SomeClass();
 		try {
-			var val = Reflect.getProperty(inst, "someProperty"); // Just crash
+			var val = inst.someProperty;
 			trace(val);
 		} catch (e:Any) {
 			trace(e);
