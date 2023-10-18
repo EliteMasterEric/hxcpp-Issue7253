@@ -3,3 +3,6 @@
 --debug
 --library hxcpp-debug-server
 --main Main
+-D HXCPP_CHECK_POINTER
+-D HXCPP_STACK_LINE
+-D HXCPP_STACK_TRACE
